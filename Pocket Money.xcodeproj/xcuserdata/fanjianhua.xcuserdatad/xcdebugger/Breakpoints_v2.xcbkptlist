@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pocket Money/ExpenseRecordController.swift"
+            timestampString = "538363553.867785"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "addButtonPressed(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in Pocket_Money.ExpenseRecordController.addButtonPressed(__ObjC.UIBarButtonItem) -&gt; ()"
+                  moduleName = "Pocket Money"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanjianhua/Documents/Project/ios/App%20Development/Pocket%20Money/Pocket%20Money/ExpenseRecordController.swift"
+                  timestampString = "538361965.609463"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.String in closure #1 (__ObjC.UIAlertAction) -&gt; () in Pocket_Money.ExpenseRecordController.addButtonPressed(__ObjC.UIBarButtonItem) -&gt; ()"
+                  moduleName = "Pocket Money"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fanjianhua/Documents/Project/ios/App%20Development/Pocket%20Money/Pocket%20Money/ExpenseRecordController.swift"
+                  timestampString = "538361965.613757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
