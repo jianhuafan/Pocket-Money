@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0C16E2201B8C690053EE6B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C16E1201B8C690053EE6B /* tessdata */; };
+		5A1D19942017EC31005C0931 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D19932017EC31005C0931 /* SwipeTableViewController.swift */; };
+		5A870CC2201BB16A0077DAC2 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */; };
+		5A870CC4201BB3970077DAC2 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A870CC3201BB3970077DAC2 /* PriceItem.swift */; };
+		5AB8539920183F4C00943556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB8539820183F4C00943556 /* GoogleService-Info.plist */; };
+		5ACFC5082018F17800DCE2CA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC5072018F17800DCE2CA /* WelcomeViewController.swift */; };
+		5ACFC50A2019038800DCE2CA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC5092019038800DCE2CA /* RegisterViewController.swift */; };
+		5ACFC50C2019039E00DCE2CA /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC50B2019039E00DCE2CA /* LogInViewController.swift */; };
+		5ACFC50E201A6A0D00DCE2CA /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC50D201A6A0D00DCE2CA /* ScanTableViewController.swift */; };
 		5AD58ECE2016B2150071C29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58ECD2016B2150071C29C /* AppDelegate.swift */; };
-		5AD58ED02016B2150071C29C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58ECF2016B2150071C29C /* ViewController.swift */; };
+		5AD58ED02016B2150071C29C /* ExpenseRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58ECF2016B2150071C29C /* ExpenseRecordController.swift */; };
 		5AD58ED32016B2150071C29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED12016B2150071C29C /* Main.storyboard */; };
 		5AD58ED52016B2150071C29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED42016B2150071C29C /* Assets.xcassets */; };
 		5AD58ED82016B2150071C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED62016B2150071C29C /* LaunchScreen.storyboard */; };
+		5AD58EE82016DA240071C29C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58EE62016DA240071C29C /* DataModel.xcdatamodeld */; };
+		5AD58F0B2016FF0E0071C29C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58F0A2016FF0E0071C29C /* CategoryViewController.swift */; };
+		F31152AEFA1933A108B80D10 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7CFE42C21557BBB03D9357 /* Pods_Pocket_Money.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0C16E1201B8C690053EE6B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		5A1D19932017EC31005C0931 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		5A870CC3201BB3970077DAC2 /* PriceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
+		5AB8539820183F4C00943556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5ACFC5072018F17800DCE2CA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5ACFC5092019038800DCE2CA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5ACFC50B2019039E00DCE2CA /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		5ACFC50D201A6A0D00DCE2CA /* ScanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
 		5AD58ECA2016B2150071C29C /* Pocket Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD58ECD2016B2150071C29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AD58ECF2016B2150071C29C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AD58ECF2016B2150071C29C /* ExpenseRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRecordController.swift; sourceTree = "<group>"; };
 		5AD58ED22016B2150071C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AD58ED42016B2150071C29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AD58ED72016B2150071C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AD58ED92016B2150071C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD58EE72016DA240071C29C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5AD58F0A2016FF0E0071C29C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5C7CFE42C21557BBB03D9357 /* Pods_Pocket_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD88CFC73F7A05B270D3736 /* Pods-Pocket Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.release.xcconfig"; sourceTree = "<group>"; };
+		80471E01BAD90E9356852328 /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31152AEFA1933A108B80D10 /* Pods_Pocket_Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A0C16E0201B88EC0053EE6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A0C16E1201B8C690053EE6B /* tessdata */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5AD58EC12016B2150071C29C = {
 			isa = PBXGroup;
 			children = (
+				9DC7F1EC12278CEAF2F60DC4 /* Frameworks */,
 				5AD58ECC2016B2150071C29C /* Pocket Money */,
+				6B3244976A5E18678B4844BA /* Pods */,
 				5AD58ECB2016B2150071C29C /* Products */,
+				5A0C16E0201B88EC0053EE6B /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +93,72 @@
 			isa = PBXGroup;
 			children = (
 				5AD58ECD2016B2150071C29C /* AppDelegate.swift */,
-				5AD58ECF2016B2150071C29C /* ViewController.swift */,
-				5AD58ED12016B2150071C29C /* Main.storyboard */,
-				5AD58ED42016B2150071C29C /* Assets.xcassets */,
-				5AD58ED62016B2150071C29C /* LaunchScreen.storyboard */,
+				5AD58EE32016CA640071C29C /* Controllers */,
+				5AD58EE42016CA8B0071C29C /* Views */,
+				5AD58EE52016CAB20071C29C /* Supporting Files */,
 				5AD58ED92016B2150071C29C /* Info.plist */,
+				5AB8539820183F4C00943556 /* GoogleService-Info.plist */,
 			);
 			path = "Pocket Money";
+			sourceTree = "<group>";
+		};
+		5AD58EE22016CA3D0071C29C /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AD58EE62016DA240071C29C /* DataModel.xcdatamodeld */,
+				5A870CC3201BB3970077DAC2 /* PriceItem.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		5AD58EE32016CA640071C29C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AD58F0A2016FF0E0071C29C /* CategoryViewController.swift */,
+				5A1D19932017EC31005C0931 /* SwipeTableViewController.swift */,
+				5AD58ECF2016B2150071C29C /* ExpenseRecordController.swift */,
+				5ACFC5072018F17800DCE2CA /* WelcomeViewController.swift */,
+				5ACFC5092019038800DCE2CA /* RegisterViewController.swift */,
+				5ACFC50B2019039E00DCE2CA /* LogInViewController.swift */,
+				5ACFC50D201A6A0D00DCE2CA /* ScanTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5AD58EE42016CA8B0071C29C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AD58ED12016B2150071C29C /* Main.storyboard */,
+				5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */,
+				5AD58EE22016CA3D0071C29C /* Data Model */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AD58EE52016CAB20071C29C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AD58ED42016B2150071C29C /* Assets.xcassets */,
+				5AD58ED62016B2150071C29C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B3244976A5E18678B4844BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80471E01BAD90E9356852328 /* Pods-Pocket Money.debug.xcconfig */,
+				6AD88CFC73F7A05B270D3736 /* Pods-Pocket Money.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DC7F1EC12278CEAF2F60DC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C7CFE42C21557BBB03D9357 /* Pods_Pocket_Money.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AD58EDC2016B2150071C29C /* Build configuration list for PBXNativeTarget "Pocket Money" */;
 			buildPhases = (
+				51FA1118109281A7834E6371 /* [CP] Check Pods Manifest.lock */,
 				5AD58EC62016B2150071C29C /* Sources */,
 				5AD58EC72016B2150071C29C /* Frameworks */,
 				5AD58EC82016B2150071C29C /* Resources */,
+				DF11E1BF3B019E7E11C8D352 /* [CP] Embed Pods Frameworks */,
+				5926CEEFB9AA1EFD985EDC77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD58ED82016B2150071C29C /* LaunchScreen.storyboard in Resources */,
+				5AB8539920183F4C00943556 /* GoogleService-Info.plist in Resources */,
+				5A0C16E2201B8C690053EE6B /* tessdata in Resources */,
 				5AD58ED52016B2150071C29C /* Assets.xcassets in Resources */,
 				5AD58ED32016B2150071C29C /* Main.storyboard in Resources */,
 			);
@@ -131,13 +233,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51FA1118109281A7834E6371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pocket Money-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5926CEEFB9AA1EFD985EDC77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF11E1BF3B019E7E11C8D352 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AD58EC62016B2150071C29C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD58ED02016B2150071C29C /* ViewController.swift in Sources */,
+				5AD58F0B2016FF0E0071C29C /* CategoryViewController.swift in Sources */,
+				5AD58ED02016B2150071C29C /* ExpenseRecordController.swift in Sources */,
+				5A870CC2201BB16A0077DAC2 /* ItemTableViewCell.swift in Sources */,
+				5ACFC50A2019038800DCE2CA /* RegisterViewController.swift in Sources */,
+				5AD58EE82016DA240071C29C /* DataModel.xcdatamodeld in Sources */,
+				5ACFC50C2019039E00DCE2CA /* LogInViewController.swift in Sources */,
+				5A870CC4201BB3970077DAC2 /* PriceItem.swift in Sources */,
+				5ACFC5082018F17800DCE2CA /* WelcomeViewController.swift in Sources */,
 				5AD58ECE2016B2150071C29C /* AppDelegate.swift in Sources */,
+				5A1D19942017EC31005C0931 /* SwipeTableViewController.swift in Sources */,
+				5ACFC50E201A6A0D00DCE2CA /* ScanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +451,7 @@
 		};
 		5AD58EDD2016B2150071C29C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80471E01BAD90E9356852328 /* Pods-Pocket Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,12 +461,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanstanley.Pocket-Money";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5AD58EDE2016B2150071C29C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD88CFC73F7A05B270D3736 /* Pods-Pocket Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanstanley.Pocket-Money";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -322,6 +503,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AD58EE62016DA240071C29C /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AD58EE72016DA240071C29C /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 5AD58EE72016DA240071C29C /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5AD58EC22016B2150071C29C /* Project object */;
 }
