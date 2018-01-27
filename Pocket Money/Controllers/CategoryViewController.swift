@@ -10,15 +10,78 @@ import UIKit
 import CoreData
 import ChameleonFramework
 import Firebase
+import UserNotifications
+
+
 
 
 class CategoryViewController: SwipeTableViewController {
     
+    let defaults = UserDefaults.standard
+    
+    
+    
+    @IBOutlet weak var budgetButton: UIBarButtonItem!
+    @IBAction func setBudgetPressed(_ sender: UIBarButtonItem) {
+        
+        var budgetField = UITextField()
+        
+        let alert = UIAlertController(title: "Set your budget", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add budget", style: .default) { (action) in
+            //What will happen once the user clicks the button
+            
+            self.defaults.set(Float(budgetField.text!)!, forKey: "budget")
+            
+            self.budgetButton.title = "Budget: \(self.defaults.float(forKey: "budget"))"
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Set budget"
+            budgetField = alertTextField
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true) {
+           
+        }
+    }
+    
     var categoryArray = [Category]()
+    
     
     var selectedUser : User? {
         didSet{
             loadCategories()
+        }
+    }
+    
+    func getNotificationSettings() {
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+            print("Notification settings: \(settings)")
+            guard settings.authorizationStatus == .authorized else { return }
+            let content = UNMutableNotificationContent()
+            content.title = "Balance Alert!"
+            content.subtitle = "From Pocket Money"
+            content.body = "Your budget is lower than your expense! Please save your money!!"
+            content.categoryIdentifier = "message"
+            
+            let trigger = UNTimeIntervalNotificationTrigger(
+                timeInterval: 10.0,
+                repeats: false)
+            
+            
+            let request = UNNotificationRequest(
+                identifier: "10.second.message",
+                content: content,
+                trigger: trigger
+            )
+            
+            UNUserNotificationCenter.current().add(
+                request, withCompletionHandler: nil)
+            
+            
         }
     }
     
@@ -29,6 +92,14 @@ class CategoryViewController: SwipeTableViewController {
         super.viewDidLoad()
         
 //        loadCategories()
+        
+        let budget = defaults.float(forKey: "budget")
+        let expense = defaults.float(forKey: "expense")
+        budgetButton.title = "Budget: \(budget)"
+        
+        if defaults.object(forKey: "budget") != nil && defaults.object(forKey: "expense") != nil && budget < expense {
+            getNotificationSettings()
+        }
         
         tableView.separatorStyle = .none
         

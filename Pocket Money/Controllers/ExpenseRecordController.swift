@@ -10,9 +10,12 @@ import UIKit
 import CoreData
 import ChameleonFramework
 
-class ExpenseRecordController: SwipeTableViewController {
+class ExpenseRecordController: UITableViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    let defaults = UserDefaults.standard
+        
     var itemArray = [Item]()
     
     
@@ -27,7 +30,11 @@ class ExpenseRecordController: SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        if defaults.object(forKey: "expense") != nil {
+            expenseButton.title = "Expense: \(defaults.float(forKey: "expense"))"
+        } else {
+            expenseButton.title = "Expense: 0.0)"
+        }
         tableView.separatorStyle = .none
         loadItems()
         
@@ -70,41 +77,51 @@ class ExpenseRecordController: SwipeTableViewController {
     
     //MARK: - Tableview Datasource Methods
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ItemTableViewCell
         
         let item = itemArray[indexPath.row]
         
-        cell.textLabel?.text = item.title
         
-        cell.backgroundColor = UIColor(hexString: selectedCategory!.color!)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(itemArray.count))
-        cell.textLabel?.textColor = ContrastColorOf(cell.backgroundColor!, returnFlat: true)
+        cell.titleLabel.text = item.title
+        cell.priceLabel.text = item.price
         
-        cell.accessoryType = item.done ? .checkmark : .none
-        
+//        cell.backgroundColor = UIColor(hexString: selectedCategory!.color!)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(itemArray.count))
+//        cell.textLabel?.textColor = ContrastColorOf(cell.backgroundColor!, returnFlat: true)
+//
+////        cell.accessoryType = item.done ? .checkmark : .none
+//
         return cell
     }
     
     //MARK: - TableView Delegate Methods
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(indexPath.row)
-        
-       
-
-        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
-        
-        self.saveItems()
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+////        print(indexPath.row)
+//
+//
+//
+//        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+//
+//        self.saveItems()
+//
+//        tableView.deselectRow(at: indexPath, animated: true)
+//    }
     
     //MARK: - Add New Items
+    
+    @IBOutlet weak var expenseButton: UIBarButtonItem!
+    
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
@@ -116,24 +133,29 @@ class ExpenseRecordController: SwipeTableViewController {
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             //What will happen once the user clicks the button
             
-           
-            
             let newItem = Item(context: self.context)
             newItem.title = textField1.text!
-            newItem.done = textField2.text!
+            newItem.price = textField2.text!
             newItem.parentCategory = self.selectedCategory
             self.itemArray.append(newItem)
-            
             self.saveItems()
-           
-            
-          
+            var expense: Float = 0.0
+            if self.defaults.object(forKey: "expense") != nil {
+                expense = self.defaults.float(forKey: "expense")
+            }
+            let newexpense = expense + Float(newItem.price!)!
+            self.defaults.set(newexpense, forKey: "expense")
+            self.expenseButton.title = "Expense: \(newexpense)"
         }
         
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Creat new item"
-            textField = alertTextField
-           
+            alertTextField.placeholder = "enter the name"
+            textField1 = alertTextField
+        }
+        
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "enter the price"
+            textField2 = alertTextField
         }
         
         alert.addAction(action)
@@ -187,16 +209,6 @@ class ExpenseRecordController: SwipeTableViewController {
         }
         
          self.tableView.reloadData()
-        
-    }
-    
-    //MARK: - Delete Data From Swipe
-    
-    override func updateModel(at indexPath: IndexPath) {
-        
-        super.updateModel(at: indexPath)
-        self.context.delete(self.itemArray[indexPath.row])
-        self.itemArray.remove(at: indexPath.row)
         
     }
     

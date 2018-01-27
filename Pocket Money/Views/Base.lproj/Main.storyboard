@@ -58,10 +58,16 @@
                                     </connections>
                                 </button>
                             </barButtonItem>
+                            <barButtonItem title="Set Budget" id="91w-d9-Ndy">
+                                <connections>
+                                    <action selector="setBudgetPressed:" destination="mfR-Jm-hg4" id="hQw-QT-LoX"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="budgetButton" destination="91w-d9-Ndy" id="gRX-iF-EdC"/>
                         <segue destination="scJ-kT-O3I" kind="show" identifier="goToItems" id="jaL-zB-YRe"/>
                     </connections>
                 </tableViewController>
@@ -86,13 +92,33 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="4wl-FC-q9G" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
-                                <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="4wl-FC-q9G" customClass="ItemTableViewCell" customModule="Pocket_Money" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4wl-FC-q9G" id="O2S-gt-lQk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKz-wh-kcK">
+                                            <rect key="frame" x="256" y="26" width="103" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-ti-RMs">
+                                            <rect key="frame" x="16" y="16" width="166" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="priceLabel" destination="RKz-wh-kcK" id="8uE-He-Ep8"/>
+                                    <outlet property="titleLabel" destination="vkg-ti-RMs" id="P67-AE-w1Y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -112,16 +138,18 @@
                                     <action selector="scan:" destination="scJ-kT-O3I" id="qdm-R6-Tnr"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem title="Expense" id="J65-OI-m4s"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="expenseButton" destination="J65-OI-m4s" id="LGz-tH-3by"/>
                         <outlet property="searchBar" destination="GD2-De-Lc4" id="Axz-W5-qw8"/>
                         <segue destination="WpS-II-6T5" kind="push" identifier="goToScan" id="qpq-Ke-Evx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3d-V9-m0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="967"/>
+            <point key="canvasLocation" x="2871" y="967"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="1Qx-if-no4">
@@ -208,7 +236,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-ga-7ix">
                                 <rect key="frame" x="35" y="145" width="304" height="30"/>
@@ -386,7 +414,7 @@
         <image name="default_photo" width="150" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mO1-Xa-XFl"/>
-        <segue reference="2bS-hc-XQd"/>
+        <segue reference="jaL-zB-YRe"/>
+        <segue reference="1EN-8d-EZV"/>
     </inferredMetricsTieBreakers>
 </document>

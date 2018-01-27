@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A0C16E2201B8C690053EE6B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C16E1201B8C690053EE6B /* tessdata */; };
 		5A1D19942017EC31005C0931 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D19932017EC31005C0931 /* SwipeTableViewController.swift */; };
-		5A870CC2201BB16A0077DAC2 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */; };
 		5A870CC4201BB3970077DAC2 /* PriceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A870CC3201BB3970077DAC2 /* PriceItem.swift */; };
+		5A870CC6201BFCBE0077DAC2 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A870CC5201BFCBE0077DAC2 /* ItemTableViewCell.swift */; };
 		5AB8539920183F4C00943556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB8539820183F4C00943556 /* GoogleService-Info.plist */; };
 		5ACFC5082018F17800DCE2CA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC5072018F17800DCE2CA /* WelcomeViewController.swift */; };
 		5ACFC50A2019038800DCE2CA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACFC5092019038800DCE2CA /* RegisterViewController.swift */; };
@@ -19,18 +19,19 @@
 		5AD58ECE2016B2150071C29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58ECD2016B2150071C29C /* AppDelegate.swift */; };
 		5AD58ED02016B2150071C29C /* ExpenseRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58ECF2016B2150071C29C /* ExpenseRecordController.swift */; };
 		5AD58ED32016B2150071C29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED12016B2150071C29C /* Main.storyboard */; };
-		5AD58ED52016B2150071C29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED42016B2150071C29C /* Assets.xcassets */; };
 		5AD58ED82016B2150071C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD58ED62016B2150071C29C /* LaunchScreen.storyboard */; };
 		5AD58EE82016DA240071C29C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58EE62016DA240071C29C /* DataModel.xcdatamodeld */; };
 		5AD58F0B2016FF0E0071C29C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD58F0A2016FF0E0071C29C /* CategoryViewController.swift */; };
+		5AF8D802201D05980052A23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF8D801201D05970052A23C /* Assets.xcassets */; };
 		F31152AEFA1933A108B80D10 /* Pods_Pocket_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7CFE42C21557BBB03D9357 /* Pods_Pocket_Money.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A0C16E1201B8C690053EE6B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		5A1D19932017EC31005C0931 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
-		5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		5A870CC3201BB3970077DAC2 /* PriceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceItem.swift; sourceTree = "<group>"; };
+		5A870CC5201BFCBE0077DAC2 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		5A870CC7201C17F70077DAC2 /* Pocket Money.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pocket Money.entitlements"; sourceTree = "<group>"; };
 		5AB8539820183F4C00943556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5ACFC5072018F17800DCE2CA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5ACFC5092019038800DCE2CA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -40,11 +41,11 @@
 		5AD58ECD2016B2150071C29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AD58ECF2016B2150071C29C /* ExpenseRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRecordController.swift; sourceTree = "<group>"; };
 		5AD58ED22016B2150071C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5AD58ED42016B2150071C29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AD58ED72016B2150071C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AD58ED92016B2150071C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD58EE72016DA240071C29C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		5AD58F0A2016FF0E0071C29C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5AF8D801201D05970052A23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7CFE42C21557BBB03D9357 /* Pods_Pocket_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pocket_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD88CFC73F7A05B270D3736 /* Pods-Pocket Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.release.xcconfig"; sourceTree = "<group>"; };
 		80471E01BAD90E9356852328 /* Pods-Pocket Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket Money.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket Money/Pods-Pocket Money.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		5AD58ECC2016B2150071C29C /* Pocket Money */ = {
 			isa = PBXGroup;
 			children = (
+				5A870CC7201C17F70077DAC2 /* Pocket Money.entitlements */,
 				5AD58ECD2016B2150071C29C /* AppDelegate.swift */,
 				5AD58EE32016CA640071C29C /* Controllers */,
 				5AD58EE42016CA8B0071C29C /* Views */,
@@ -129,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD58ED12016B2150071C29C /* Main.storyboard */,
-				5A870CC1201BB16A0077DAC2 /* ItemTableViewCell.swift */,
+				5A870CC5201BFCBE0077DAC2 /* ItemTableViewCell.swift */,
 				5AD58EE22016CA3D0071C29C /* Data Model */,
 			);
 			path = Views;
@@ -138,7 +140,7 @@
 		5AD58EE52016CAB20071C29C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5AD58ED42016B2150071C29C /* Assets.xcassets */,
+				5AF8D801201D05970052A23C /* Assets.xcassets */,
 				5AD58ED62016B2150071C29C /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -197,6 +199,14 @@
 					5AD58EC92016B2150071C29C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -226,8 +236,8 @@
 				5AD58ED82016B2150071C29C /* LaunchScreen.storyboard in Resources */,
 				5AB8539920183F4C00943556 /* GoogleService-Info.plist in Resources */,
 				5A0C16E2201B8C690053EE6B /* tessdata in Resources */,
-				5AD58ED52016B2150071C29C /* Assets.xcassets in Resources */,
 				5AD58ED32016B2150071C29C /* Main.storyboard in Resources */,
+				5AF8D802201D05980052A23C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +318,6 @@
 			files = (
 				5AD58F0B2016FF0E0071C29C /* CategoryViewController.swift in Sources */,
 				5AD58ED02016B2150071C29C /* ExpenseRecordController.swift in Sources */,
-				5A870CC2201BB16A0077DAC2 /* ItemTableViewCell.swift in Sources */,
 				5ACFC50A2019038800DCE2CA /* RegisterViewController.swift in Sources */,
 				5AD58EE82016DA240071C29C /* DataModel.xcdatamodeld in Sources */,
 				5ACFC50C2019039E00DCE2CA /* LogInViewController.swift in Sources */,
@@ -316,6 +325,7 @@
 				5ACFC5082018F17800DCE2CA /* WelcomeViewController.swift in Sources */,
 				5AD58ECE2016B2150071C29C /* AppDelegate.swift in Sources */,
 				5A1D19942017EC31005C0931 /* SwipeTableViewController.swift in Sources */,
+				5A870CC6201BFCBE0077DAC2 /* ItemTableViewCell.swift in Sources */,
 				5ACFC50E201A6A0D00DCE2CA /* ScanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +464,7 @@
 			baseConfigurationReference = 80471E01BAD90E9356852328 /* Pods-Pocket Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pocket Money/Pocket Money.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP3BAYE388;
 				INFOPLIST_FILE = "Pocket Money/Info.plist";
@@ -470,6 +481,7 @@
 			baseConfigurationReference = 6AD88CFC73F7A05B270D3736 /* Pods-Pocket Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pocket Money/Pocket Money.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP3BAYE388;
 				INFOPLIST_FILE = "Pocket Money/Info.plist";

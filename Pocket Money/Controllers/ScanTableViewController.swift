@@ -116,7 +116,7 @@ class ScanTableViewController: UITableViewController {
         
             let newItem = Item(context: self.context)
             newItem.title = line
-            newItem.done = false
+            newItem.price = "0.0"
             newItem.parentCategory = selectedCategory
             self.itemArray.append(newItem)
         }
